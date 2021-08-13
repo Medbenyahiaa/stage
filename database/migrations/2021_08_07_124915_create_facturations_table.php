@@ -15,6 +15,12 @@ class CreateFacturationsTable extends Migration
     {
         Schema::create('facturations', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('numero_facture');
+            $table->double('montant');
+            $table->boolean('valide')->default(false);
+            $table->date('date_facture');
             $table->timestamps();
         });
     }
