@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="app">
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" style="background-color:#4682B4;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     MHY Service

@@ -53,25 +53,37 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <!--li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li-->
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <!--li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li-->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="/login">Connexion</a></li>
+          @auth
+					@if( Auth::user())
+          <li class="dropdown"><a href="#"><span>{{ Auth::user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
+                   <ul>
+                       <li><a href="/dash">Mon Espace</a></li>
+                       <li><a href="{{ route('logout') }}"onclick="event.preventDefault();
+													document.getElementById('logout-form').submit();">{{ __('Deconnexion') }}</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										     	@csrf
+										      </form>
+                          
+                      </li>
+                      <!--li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                     <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                      </li-->
+    
+                   </ul>
+                  </li>
+           @endif
+           @else
+           <li><a class="getstarted scrollto" href="{{ route('login') }}">Connexion</a></li>
+           @endauth
+         
+         
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

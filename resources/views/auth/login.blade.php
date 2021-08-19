@@ -15,8 +15,9 @@
             <div class="login100-pic js-tilt" data-tilt style="margin-top: -14vh;">
                 <img src="https://colorlib.com/etc/lf/Login_v1/images/img-01.png" alt="IMG">
             </div>
-
-            <form class="login100-form validate-form" style="margin-top: -11vh;">
+            
+            <form class="login100-form validate-form" style="margin-top: -11vh;" method="POST" action="{{ route('login') }}">
+            @csrf
                 <span class="login100-form-title">
                     Admin Login
                 </span>
@@ -35,16 +36,21 @@
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                    <input id="password" class="input100" type="password"  placeholder="Password">
+                    <input id="password" type="password" class="input100" name="password" required autocomplete="current-password" placeholder="Password" required>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                     </span>
+                    @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                 </div>
 
                 <div class="container-login100-form-btn">
                     <button class="login100-form-btn">
-                        Login
+                    {{ __('Login') }}
                     </button>
                 </div>
 
