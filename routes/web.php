@@ -31,3 +31,6 @@ Route::get('/client',function(){
 Route::get('/ajoutclient',function(){
     return view('client.AjouteClient');
 });
+Route::get('/addadmin',function(){
+    return view('admin.add');
+});

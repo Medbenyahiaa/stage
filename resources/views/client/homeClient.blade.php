@@ -8,7 +8,7 @@
     Client
 @endsection
 @section('titlePage')
-     Client
+     Liste Client
 @endsection
 
 @section('content')

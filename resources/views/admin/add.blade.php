@@ -1,21 +1,21 @@
 @extends('layouts.master')
 @section('Content-fluid')
 <div class="panel-header panel-header-sm">
+  
 </div>
 @endsection
-
 @section('title')
-    Client
+Gestion d'administrateur
 @endsection
 @section('titlePage')
-     Ajouter Client
+Gestion d'administrateur
 @endsection
 
 @section('content')
-<center>
+    <center>
     <div class="card" style="width: 50%; border-radius: 26px; background-color: #ececec">
         <div class="card-header">
-            <div style="text-align: center;"><h3 style="color: #ff3636">Ajoute Client </h3></div>
+            <div style="text-align: center;"><h3 style="color: #ff3636">Ajoute Un Compte</h3></div>
         </div>
         <div class="card-body">
     <form method="post" class="section " enctype="multipart/form-data">
@@ -23,60 +23,73 @@
     {{csrf_field()}}
 
 
-    <!-- RAISON -->
+    <!-- Email -->
         <div class="input-group form-group">
             <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
-            <input type="text" class="form-control" name="email" placeholder="Nom/Raison sociale" value="">
+            <input type="text" class="form-control" name="email" placeholder="Adresse Mail" value="{{ old('email') }}">
         </div>
 
-        
-    <!-- ICE -->
+        <!-- Gestion d'erreur pour l'adresse Mail -->
+        @if( $errors->has('email'))
+
+            <p class="erreur">
+                {{ $errors->first('email') }}
+            </p>
+
+        @endif
+
+    <!-- Mot de passe -->
         <div class="input-group form-group">
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="ICE " name="ICE">
+            <input type="password" class="form-control" placeholder="Mot de passe" name="password">
 
         </div>
-        
+        <!-- Gestion d'erreur pour le mot de passe -->
+        @if( $errors->has('password'))
+            <p class="erreur">
+                {{ $errors->first('password') }}
+            </p>
 
-    <!-- adress-->
+        @endif
+
+    <!-- Mot de passe de confirmation-->
         <div class="input-group form-group">
             <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Adresse" name="adresse">
-        </div>
-         <!-- ville-->
-         <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-home"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="ville" name="ville">
+            <input type="password" class="form-control" placeholder="Mot de passe de confirmation" name="password_confirmation">
         </div>
 
-          <!-- Numero de téléphone -->
-        <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-mobile"></i></span>
-            </div>
-            <input  type="ttext"
-                    class="form-control" name="telephone" placeholder="Numero de Téléphone" value="{{ old('telephone') }}">
-        </div>
+        <!-- Gestion d'erreur pour le mot de passe de confirmation-->
+        @if( $errors->has('password_confirmation'))
 
+            <p class="erreur">
+                {{ $errors->first('password_confirmation') }}
+            </p>
 
-        <!-- Nom Complet
+        @endif
+
+        <br>
+
+        <!-- Nom Complet-->
         <div class="input-group form-group">
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-            <input type="text" class="form-control" name="nom" placeholder="Nom " value="">
+            <input type="text" class="form-control" name="nom" placeholder="Nom " value="{{ old('nom') }}">
         </div>
-    -->
 
-      
+        <!-- Gestion d'erreur pour le Nom -->
+        @if( $errors->has('name'))
+            <p class="erreur">
+                {{ $errors->first('name') }}
+            </p>
+
+        @endif
 
     <!-- Numero de téléphone 
         <div class="input-group form-group">
@@ -99,7 +112,7 @@
     <!-- Boutton de confirmation -->
         <center>
             <div class="form-group">
-                <input type="submit" value="Ajouter" class="VoirPlus">
+                <input type="submit" value="register" class="VoirPlus">
             </div>
         </center>
 
@@ -112,14 +125,13 @@
         <table class="table">
             <thead class="tableTitle">
             <tr style=" text-align: center ;" >
-                      <th>Nom /Raison social</th>
-                      <th>ICE</th>
-                      <th>Adresse</th>
-                      <th>Ville</th>
-                      <th>Telephone</th>
+               
+                <th scope="col">Email</th>
+                <th scope="col">Nom </th>
             </tr>
             </thead>
            
         </table>
     </div>
+
 @endsection

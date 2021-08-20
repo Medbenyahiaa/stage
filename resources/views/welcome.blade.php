@@ -41,10 +41,8 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="http://127.0.0.1:8000">MHY SERVICE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+       <h1 class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"><a href="http://127.0.0.1:8000">MHY SERVICE</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -492,7 +490,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
+        
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>MHY Service</h3>
             <p>
@@ -544,7 +542,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>MB</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
