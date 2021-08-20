@@ -24,3 +24,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dash', function () {
     return view('admin.homeAdmin');
 });
+
+Route::get('/client',function(){
+    return view('client.homeClient');
+});
+Route::get('/ajoutclient',function(){
+    return view('client.AjouteClient');
+});

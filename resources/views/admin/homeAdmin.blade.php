@@ -6,7 +6,7 @@
 @endsection
 
 @section('title')
-    Admin Page
+    MHY Service
 @endsection
 @section('titlePage')
     Bonjour {{Auth::user()->name}}
