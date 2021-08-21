@@ -42,8 +42,8 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
       <!-- Uncomment below if you prefer to use an image logo -->
-       <h1 class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"><a href="http://127.0.0.1:8000">MHY SERVICE</a></h1>
-
+       <!--h5 class="logo me-auto"><a href="http://127.0.0.1:8000">MHY SERVICE</a></h5-->
+       <h5 class="logo me-auto"><a href="http://127.0.0.1:8000"><img src="assets/img/logog1v.png" alt="" class="img-fluid"></a></h5>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -492,7 +492,8 @@
         <div class="row">
         
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>MHY Service</h3>
+            <img src="../img/logocentre.png" width="200" height="200" >
+            
             <p>
               A108 Adam Street <br>
               Temara, NY 535022<br>

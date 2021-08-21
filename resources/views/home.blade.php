@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                   <center> Bienvenue {{Auth::user()->name}}</center>
+                  <center> <img src="../img/logocentre.png"  alt="IMG" width="200" height="200"></center>
+                  <center><a href="/" class="btn btn-info">HOME</a></center>
                 </div>
             </div>
         </div>

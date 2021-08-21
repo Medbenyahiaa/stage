@@ -13,7 +13,7 @@
     <div class="container">
         <div class="wrap-login100" style=" height: 65vh;">
             <div class="login100-pic js-tilt" data-tilt style="margin-top: -14vh;">
-                <img src="https://colorlib.com/etc/lf/Login_v1/images/img-01.png" alt="IMG">
+                <img src="../img/logocentre.png"  alt="IMG">
             </div>
             
             <form class="login100-form validate-form" style="margin-top: -11vh;" method="POST" action="{{ route('login') }}">

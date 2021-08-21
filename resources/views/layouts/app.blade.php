@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicons.png" rel="icon">
+  <link href="assets/img/favicons.png" rel="apple-touch-icon">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -25,10 +25,10 @@
 </head>
 <body>
     <div id="app">
-    <nav class="navbar navbar-light" style="background-color:#4682B4;">
+    <nav class="navbar navbar-light" style="background-color:#37517e;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    MHY Service
+                <img src="assets/img/logog1v.png" width="150" height="150" alt="" class="img-fluid">
                 </a>
                 <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
