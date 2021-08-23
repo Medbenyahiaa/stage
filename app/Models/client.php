@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class client extends Model
 {
-    use HasFactory;
+    protected $fillable = ['raison_social','ICE','adresse','ville','telephone'];
+    protected $primaryKey ='id';
+
 }

@@ -119,6 +119,17 @@
                       <th>Telephone</th>
             </tr>
             </thead>
+            <tbody>
+            @foreach( $clients as $client)
+                    <tr>
+                        <th scope="col">{{ $client->raison_social }}</th>
+                        <th scope="col">{{ $client->ICE }}</th>
+                        <th scope="col">{{ $client->adresse }}</th>
+                        <th scope="col">{{ $client->ville }}</th>
+                        <th scope="col">{{ $client->telephone }}</th>
+                    </tr>
+            @endforeach
+            </tbody>
            
         </table>
     </div>
