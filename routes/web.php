@@ -24,13 +24,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dash', function () {
     return view('admin.homeAdmin');
 });
-
+//CLIENT
 Route::get('/client',function(){
     return view('client.homeClient');
 });
 Route::get('/ajoutclient',function(){
     return view('client.AjouteClient');
 });
+
+
+//ADMIN
 Route::get('/addadmin',function(){
     return view('admin.add');
+});
+//FACTURE
+Route::get('/facture',function(){
+    return view('facture.homeFacture');
 });

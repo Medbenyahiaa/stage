@@ -18,9 +18,9 @@ Gestion d'administrateur
             <div style="text-align: center;"><h3 style="color: #ff3636">Ajoute Un Compte</h3></div>
         </div>
         <div class="card-body">
-    <form method="post" class="section " enctype="multipart/form-data">
+    <form method="post" class="section " enctype="multipart/form-data" action="{{ route('register') }}">
 
-    {{csrf_field()}}
+    @csrf
 
 
     <!-- Email -->
@@ -28,7 +28,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
-            <input type="text" class="form-control" name="email" placeholder="Adresse Mail" value="{{ old('email') }}">
+            <input type="text" class="form-control" name="email" placeholder="Adresse Mail" value="{{ old('email') }}" required autocomplete="email">
         </div>
 
         <!-- Gestion d'erreur pour l'adresse Mail -->
@@ -45,7 +45,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Mot de passe" name="password">
+            <input type="password" class="form-control" placeholder="Mot de passe" name="password" required autocomplete="new-password">
 
         </div>
         <!-- Gestion d'erreur pour le mot de passe -->
@@ -61,7 +61,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Mot de passe de confirmation" name="password_confirmation">
+            <input type="password" class="form-control" placeholder="Mot de passe de confirmation" name="password_confirmation" required autocomplete="new-password">
         </div>
 
         <!-- Gestion d'erreur pour le mot de passe de confirmation-->
@@ -80,7 +80,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-            <input type="text" class="form-control" name="nom" placeholder="Nom " value="{{ old('nom') }}">
+            <input type="text" class="form-control" name="name" placeholder="Nom " value="{{ old('name') }}"  required autocomplete="name" autofocus>
         </div>
 
         <!-- Gestion d'erreur pour le Nom -->
@@ -112,7 +112,7 @@ Gestion d'administrateur
     <!-- Boutton de confirmation -->
         <center>
             <div class="form-group">
-                <input type="submit" value="register" class="VoirPlus">
+                <input type="submit" value="{{ __('Register') }}" class="VoirPlus">
             </div>
         </center>
 
