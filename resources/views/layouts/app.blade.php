@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- Favicons -->
-  <link href="assets/img/favicons.png" rel="icon">
-  <link href="assets/img/favicons.png" rel="apple-touch-icon">
+     <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons.png">
+  <link rel="icon" type="image/png" href="../img/favicons.png">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

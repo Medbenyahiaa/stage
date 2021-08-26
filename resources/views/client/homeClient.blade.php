@@ -70,8 +70,8 @@
     		             <input type="text" class="form-control" name ="telephone"placeholder="06 ...">
     	             </div>
                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success">Ajouter</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-success ">Ajouter</button>
                   </div>
                  </form>
                 </div>
