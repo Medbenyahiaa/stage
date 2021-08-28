@@ -25,9 +25,9 @@ Route::get('/dash', function () {
     return view('admin.homeAdmin');
 });
 //CLIENT
-Route::get('/client',function(){
-    return view('client.homeClient');
-});
+//Route::get('/client',function(){
+    //return view('client.homeClient');
+//});
 Route::get('/ajoutclient',function(){
     return view('client.AjouteClient');
 });
@@ -41,3 +41,5 @@ Route::get('/addadmin',function(){
 Route::get('/facture',function(){
     return view('facture.homeFacture');
 });
+
+Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index'])->name('client');

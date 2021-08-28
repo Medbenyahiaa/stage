@@ -14,7 +14,7 @@
 
 @section('content')
  <div class="wrapper">
-    
+
     <div class="row">
         <div class="col-lg-4">
           <div class="card card-chart">
@@ -129,7 +129,7 @@
                                     {{ auth()->user()->created_at }}
                                 </td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                 </div>
@@ -145,5 +145,5 @@
 @endsection
 
 @section('scripts')
-    
+
 @endsection

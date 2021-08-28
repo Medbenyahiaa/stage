@@ -16,8 +16,14 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $client ['clients']=Client::OrderBy('id')->paginate(3);
-        return view ('client.AjouteClient',$client);
+        //$client ['clients']=Client::OrderBy('id')->paginate(3);
+        //return view ('client.AjouteClient',$client);
+
+        $clients = Client::all();
+        return \view('client.homeClient', [
+            'clients' => $clients,
+        ]);
+
     }
 
     /**
@@ -45,7 +51,7 @@ class ClientController extends Controller
             'ville'=>$request->ville,
             'telephone'=>$request->telephone
         );
-        
+
 
         Client::create($client);
         return redirect()->route('client.AjouteClient');

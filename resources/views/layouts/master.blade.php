@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons.png">
   <link rel="icon" type="image/png" href="../img/favicons.png">
-  
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     @yield('title')
@@ -62,9 +62,9 @@
                   <div>Home</div>
               </a>
           </li>
-          
-               
-            
+
+
+
             <li @if( request()->is('homeAdmin') ) class="activeItem" @endif>
               <a class="icon-link" href="/dash">
                   <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -195,12 +195,12 @@ S412.45,452.911,408.309,452.911z"/>
 
            -->
            <li @if( request()->is('client') ) class="activeItem" @endif>
-            <a class="icon-link" href="/client">
+            <a class="icon-link" href="{{ route('client') }}">
                 <svg class="icon" style="margin-right: 15px" viewBox="0 0 496 496" xmlns="http://www.w3.org/2000/svg"><path d="m472 16h-73.472656c-3.3125-9.289062-12.113282-16-22.527344-16h-112c-10.414062 0-19.214844 6.710938-22.527344 16h-73.472656c-13.230469 0-24 10.769531-24 24v104h-27.246094c-9.738281 0-19.347656 2.550781-27.792968 7.382812l-43.089844 24.617188h-45.871094v144h53.574219l33.890625 22.59375c9.230468 6.160156 19.976562 9.40625 31.0625 9.40625h25.472656v120c0 13.230469 10.769531 24 24 24h304c13.230469 0 24-10.769531 24-24v-432c0-13.230469-10.769531-24-24-24zm-280 192h16c17.648438 0 32-14.351562 32-32s-14.351562-32-32-32h-16v-80h49.472656c3.3125 9.289062 12.113282 16 22.527344 16h112c10.414062 0 19.214844-6.710938 22.527344-16h49.472656v384h-256zm64-184c0-4.414062 3.585938-8 8-8h112c4.414062 0 8 3.585938 8 8v32c0 4.414062-3.585938 8-8 8h-112c-4.414062 0-8-3.585938-8-8zm-96 16c0-4.414062 3.585938-8 8-8h72v16h-64v96h-16zm-41.472656 296c-7.917969 0-15.589844-2.320312-22.183594-6.71875l-37.917969-25.28125h-42.425781v-112h34.128906l46.773438-26.726562c6.035156-3.449219 12.898437-5.273438 19.851562-5.273438h91.246094c8.824219 0 16 7.175781 16 16s-7.175781 16-16 16h-96v8c0 22.054688-17.945312 40-40 40v16c28.167969 0 51.535156-20.894531 55.433594-48h16.566406v128zm361.472656 136c0 4.414062-3.585938 8-8 8h-304c-4.414062 0-8-3.585938-8-8v-264h16v256h288v-416h-64v-16h72c4.414062 0 8 3.585938 8 8zm0 0"/><path d="m272 32h16v16h-16zm0 0"/><path d="m352 32h16v16h-16zm0 0"/><path d="m378.984375 369.671875-27-7.710937-.007813-4.058594c14.503907-10.125 24.023438-26.910156 24.023438-45.902344v-16c0-30.871094-25.128906-56-56-56s-56 25.128906-56 56v16c0 18.976562 9.511719 35.753906 24 45.886719v4.082031l-26.992188 7.703125c-17.078124 4.886719-29.007812 20.703125-29.007812 38.472656v23.855469h176v-23.855469c0-17.769531-11.929688-33.585937-29.015625-38.472656zm-98.984375-57.671875v-16c0-22.054688 17.945312-40 40-40s40 17.945312 40 40v16c0 22.054688-17.945312 40-40 40s-40-17.945312-40-40zm55.71875 53.710938-15.71875 20.953124-15.71875-20.953124c4.992188 1.464843 10.261719 2.289062 15.71875 2.289062s10.726562-.824219 15.71875-2.289062zm56.28125 50.289062h-144v-7.855469c0-10.65625 7.160156-20.152343 17.40625-23.082031l27.496094-7.855469 27.097656 36.128907 27.097656-36.128907 27.496094 7.855469c10.246094 2.929688 17.40625 12.425781 17.40625 23.082031zm0 0"/><path d="m208 96h16v16h-16zm0 0"/><path d="m240 96h192v16h-192zm0 0"/><path d="m256 128h176v16h-176zm0 0"/><path d="m256 160h176v16h-176zm0 0"/><path d="m416 192h16v16h-16zm0 0"/><path d="m256 192h144v16h-144zm0 0"/></svg>
                 <div>Liste des client</div>
             </a>
            </li>
-           
+
             <li @if( request()->is('facture') ) class="activeItem" @endif>
               <a class="icon-link" href="/facture">
               <svg   class="icon" style="margin-right: 15px" viewBox="0 0 496 496" xmlns="http://www.w3.org/2000/svg"><g><path d="m416 8h-320a48.051 48.051 0 0 0 -48 48v440a8 8 0 0 0 8 8h320a8 8 0 0 0 8-8v-248h72a8 8 0 0 0 8-8v-184a48.051 48.051 0 0 0 -48-48zm-48 48v432h-304v-432a32.03 32.03 0 0 1 32-32h284.26a47.8 47.8 0 0 0 -12.26 32zm80 176h-64v-176a32 32 0 0 1 64 0z"/><path d="m336 232h-240a8 8 0 0 0 -8 8v120a8 8 0 0 0 8 8h240a8 8 0 0 0 8-8v-120a8 8 0 0 0 -8-8zm-8 24h-168v-8h168zm-184-8v8h-40v-8zm-40 24h40v80h-40zm56 80v-80h168v80z"/><path d="m336 64h-240a8 8 0 0 0 -8 8v40a8 8 0 0 0 8 8h240a8 8 0 0 0 8-8v-40a8 8 0 0 0 -8-8zm-8 40h-224v-24h224z"/><path d="m128 160h136a8 8 0 0 0 0-16h-136a8 8 0 0 0 0 16z"/><path d="m96 160h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z"/><path d="m128 184h136a8 8 0 0 0 0-16h-136a8 8 0 0 0 0 16z"/><path d="m96 184h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z"/><path d="m128 208h136a8 8 0 0 0 0-16h-136a8 8 0 0 0 0 16z"/><path d="m96 208h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z"/><path d="m336 424h-80a8 8 0 0 0 0 16h80a8 8 0 0 0 0-16z"/><path d="m336 448h-40a8 8 0 0 0 0 16h40a8 8 0 0 0 0-16z"/></g></svg>
@@ -248,9 +248,9 @@ S412.45,452.911,408.309,452.911z"/>
                   <div>Gestion des aministrateurs</div>
               </a>
         </li>
-            
-                
-            
+
+
+
             <!--li>
               <a href="./typography.html">
                 <i class="now-ui-icons text_caps-small"></i>
@@ -303,28 +303,28 @@ S412.45,452.911,408.309,452.911z"/>
                   <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                       <i class="now-ui-icons users_single-02"></i>
-                      {{ Auth::user()->name }} 
+                      {{ Auth::user()->name }}
                     </a>
-    
+
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('logout') }}"
                           onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                         </a>
-    
+
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                     </div>
                 </li>
-                
+
               </ul>
             </div>
           </div>
         </nav>
         <!-- End Navbar -->
-        
+
 
           @yield('Content-fluid')
           <div class="content" style="padding-top: 80px">
@@ -342,7 +342,7 @@ S412.45,452.911,408.309,452.911z"/>
                 <li>
                   <a >
                     Anouar Hamali
-                
+
                   </a>
                 </li>
                 <li>
