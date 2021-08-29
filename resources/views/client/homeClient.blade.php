@@ -26,12 +26,14 @@
                 <div class="table-responsive">
                     <table class="table">
                         <thead class=" text-primary">
+                        <tr style=" text-align: center ;" >
                             <th>Nom /Raison social</th>
                             <th>ICE</th>
                             <th>Adresse</th>
                             <th>Ville</th>
                             <th>Telephone</th>
                             <th>Modifier</th>
+                        </tr>
                         </thead>
 
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Client_Create">Ajouter
@@ -90,6 +92,7 @@
 
                         <tbody>
                             @foreach ($clients as $client)
+                            <tr>
                                 <td>{{ $client->raison_social }}</td>
                                 <td>{{ $client->ICE }}</td>
                                 <td>{{ $client->adresse }}</td>
@@ -98,6 +101,7 @@
                                 <td>
                                     <a href="{{ route('editClient', ['id' => $client->id]) }}" class="btn btn-primary">Edition Client</a>
                                 </td>
+                            </tr>
                             @endforeach
                         </tbody>
 
