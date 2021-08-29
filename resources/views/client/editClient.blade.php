@@ -45,7 +45,7 @@
                                         <input type="text" name="Telephone" value="#" class="form-control">
                                 </div>
                                 <button type="submit" class="btn btn-info">Update</button>
-                                <a href="/role-users" class="btn btn-danger">Cancel</a>
+                                <a href="/allClient" class="btn btn-danger">Cancel</a>
         
                             </form>
                        </div>
