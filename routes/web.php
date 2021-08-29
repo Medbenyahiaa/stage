@@ -19,30 +19,29 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
+//HOME + DAHSBOARD
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dash', function () {
     return view('admin.homeAdmin');
 });
 //CLIENT
-//Route::get('/client',function(){
-    //return view('client.homeClient');
-//});
-Route::get('/ajoutclient',function(){
+/*Route::get('/ajoutclient',function(){
     return view('client.AjouteClient');
+});*/
+Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index'])->name('client');
+Route::post('/addClient', [App\Http\Controllers\ClientController::class, 'store'])->name('addClient');
+Route::get('/editClient/{id}', [App\Http\Controllers\ClientController::class, 'edit'])->name('editClient');
+Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class, 'update'])->name('
+');
+Route::get('/face',function(){
+    return view('client.editClient');
 });
-
 
 //ADMIN
-Route::get('/addadmin',function(){
-    return view('admin.add');
-});
+Route::get('/addadmin' , [App\Http\Controllers\UserController::class, 'Admin'])->name('addadmin');
 //FACTURE
 Route::get('/facture',function(){
     return view('facture.homeFacture');
 });
 
-Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index'])->name('client');
-Route::post('/addClient', [App\Http\Controllers\ClientController::class, 'store'])->name('addClient');
-Route::get('/editClient/{id}', [App\Http\Controllers\ClientController::class, 'edit'])->name('editClient');
-Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class, 'update'])->name('updateClient');
+

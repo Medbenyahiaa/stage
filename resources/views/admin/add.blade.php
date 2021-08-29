@@ -130,6 +130,14 @@ Gestion d'administrateur
                 <th scope="col">Nom </th>
             </tr>
             </thead>
+            <tbody>
+            @foreach( $users as $user)
+                    <tr>
+                        <th scope="col">{{ $user->email }}</th>
+                        <th scope="col">{{ $user->name }}</th>
+                    </tr>
+            @endforeach
+            </tbody>
            
         </table>
     </div>
