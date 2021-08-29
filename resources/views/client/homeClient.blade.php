@@ -46,7 +46,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="#" method="post">
+                                        <form action="{{ route('addClient') }}" method="POST">
                                             @csrf
                                             <div class="form-group">
                                                 <label>Nom / Raison social</label>

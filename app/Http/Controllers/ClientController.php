@@ -44,17 +44,15 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        $client = array(
-            'raison_social'=>$request->raison_social,
-            'ICE'=>$request->ICE,
-            'adresse'=>$request->adresse,
-            'ville'=>$request->ville,
-            'telephone'=>$request->telephone
-        );
+        $client = Client::create([
+            'raison_social' => $request->input('raison_social'),
+            'ICE' => $request->input('ICE'),
+            'adresse' => $request->input('adresse'),
+            'ville' => $request->input('ville'),
+            'telephone' => $request->input('telephone'),
+        ]);
 
-
-        Client::create($client);
-        return redirect()->route('client.AjouteClient');
+        return redirect()->route('client');
 
     }
 
