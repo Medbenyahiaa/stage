@@ -44,3 +44,5 @@ Route::get('/facture',function(){
 
 Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index'])->name('client');
 Route::post('/addClient', [App\Http\Controllers\ClientController::class, 'store'])->name('addClient');
+Route::get('/editClient/{id}', [App\Http\Controllers\ClientController::class, 'edit'])->name('editClient');
+Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class, 'update'])->name('updateClient');

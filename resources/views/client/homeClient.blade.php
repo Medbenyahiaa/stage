@@ -31,6 +31,7 @@
                             <th>Adresse</th>
                             <th>Ville</th>
                             <th>Telephone</th>
+                            <th>Modifier</th>
                         </thead>
 
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Client_Create">Ajouter
@@ -94,10 +95,12 @@
                                 <td>{{ $client->adresse }}</td>
                                 <td>{{ $client->ville }}</td>
                                 <td>{{ $client->telephone }}</td>
+                                <td>
+                                    <a href="{{ route('editClient', ['id' => $client->id]) }}" class="btn btn-primary">Edition Client</a>
+                                </td>
                             @endforeach
                         </tbody>
 
-                        <a href="#" class="btn btn-primary">Edition Client</a>
                     </table>
                 </div>
             </div>

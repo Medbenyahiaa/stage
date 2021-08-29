@@ -73,7 +73,7 @@ class ClientController extends Controller
      * @param \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit(Client $client)
+    public function edit($id)
     {
         //
     }
@@ -85,17 +85,17 @@ class ClientController extends Controller
      * @param \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
-        $client = array(
-            'raison_social'=>$request->raison_social,
-            'ICE'=>$request->ICE,
-            'adresse'=>$request->adresse,
-            'ville'=>$request->ville,
-            'telephone'=>$request->telephone
-        );
-        Client::FindOrfail($request->client_id)->update($client);
-        return redirect()->route('client.AjouteClient');
+        $client = Client::find($id);
+        $client->raison_social = $request->input('raison_social');
+        $client->ICE = $request->input('ICE');
+        $client->adresse = $request->input('adresse');
+        $client->ville = $request->input('ville');
+        $client->telephone = $request->input('telephone');
+        $client->save();
+
+        return redirect()->route('client');
     }
 
     /**
