@@ -14,9 +14,10 @@
                         </div>
                     @endif
 
-                   <center> Bienvenue {{Auth::user()->name}}</center>
+                   <center> Bienvenue M.{{Auth::user()->name}}</center>
                   <center> <img src="../img/logocentre.png"  alt="IMG" width="200" height="200"></center>
-                  <center><a href="/" class="btn btn-info">HOME</a></center>
+                  <center><a href="/" class="btn btn-info">HOME</a></center><br>
+                  <center><a href="/dash" class="btn btn-info">TON ESPACE</a></center>
                 </div>
             </div>
         </div>

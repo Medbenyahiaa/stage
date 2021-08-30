@@ -43,5 +43,6 @@ Route::get('/addadmin' , [App\Http\Controllers\UserController::class, 'Admin'])-
 Route::get('/facture',function(){
     return view('facture.homeFacture');
 });
-
-
+//FOURNISSEUR
+Route::get('/allfourni', [App\Http\Controllers\FournisseurController::class, 'index'])->name('fournisseur');
+Route::post('/addfourni', [App\Http\Controllers\FournisseurController::class, 'store'])->name('addfourni');
