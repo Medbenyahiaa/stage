@@ -32,9 +32,7 @@ Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index']
 Route::post('/addClient', [App\Http\Controllers\ClientController::class, 'store'])->name('addClient');
 Route::get('/editClient/{id}', [App\Http\Controllers\ClientController::class, 'edit'])->name('editClient');
 Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class, 'update'])->name('updateClient');
-Route::get('/face',function(){
-    return view('client.editClient');
-});
+
 
 //ADMIN
 Route::get('/addadmin' , [App\Http\Controllers\UserController::class, 'Admin'])->name('addadmin');
@@ -45,3 +43,5 @@ Route::get('/facture',function(){
 //FOURNISSEUR
 Route::get('/allfourni', [App\Http\Controllers\FournisseurController::class, 'index'])->name('fournisseur');
 Route::post('/addfourni', [App\Http\Controllers\FournisseurController::class, 'store'])->name('addfourni');
+Route::get('/editFourni/{id}', [App\Http\Controllers\FournisseurController::class, 'edit'])->name('editFourni');
+Route::post('/updateFourni/{id}', [App\Http\Controllers\FournisseurController::class, 'update'])->name('updateFourni');

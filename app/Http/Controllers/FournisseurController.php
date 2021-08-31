@@ -64,12 +64,15 @@ class FournisseurController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param \App\Models\fournisseur  $fournisseur
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        $fournisseur = fournisseur::find($id);
+        return \view('fourni.editFourni', [
+            'fournisseur' => $fournisseur,
+        ]);
     }
 
     /**
