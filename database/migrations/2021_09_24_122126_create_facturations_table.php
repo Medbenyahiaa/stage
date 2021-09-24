@@ -13,10 +13,11 @@ class CreateFacturationsTable extends Migration
      */
     public function up()
     {
+        
         Schema::create('facturations', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('client_id');
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
             $table->string('numero_facture');
             $table->double('montant');
             $table->boolean('valide')->default(false);

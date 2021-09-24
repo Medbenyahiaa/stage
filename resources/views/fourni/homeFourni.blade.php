@@ -37,13 +37,13 @@ Fournisseur
                         </thead>
 
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Client_Create">Ajouter
-                            Client</button>
+                            Fournisseur</button>
                         <div class="modal fade" id="Client_Create" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Ajouter un client</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Ajouter un fournisseur</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

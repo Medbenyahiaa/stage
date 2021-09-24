@@ -37,9 +37,9 @@ Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class,
 //ADMIN
 Route::get('/addadmin' , [App\Http\Controllers\UserController::class, 'Admin'])->name('addadmin');
 //FACTURE
-Route::get('/facture',function(){
-    return view('facture.homeFacture');
-});
+Route::get('/facture', [App\Http\Controllers\FactureController::class, 'index'])->name('facture');
+Route::post('/addfact', [App\Http\Controllers\FactureController::class, 'store'])->name('addfact');
+//Route::post('/editFacturationValide/{id, valide}', [App\Http\Controllers\FactureController::class, 'editFacturationValide'])->name('editFacturationValide');
 //FOURNISSEUR
 Route::get('/allfourni', [App\Http\Controllers\FournisseurController::class, 'index'])->name('fournisseur');
 Route::post('/addfourni', [App\Http\Controllers\FournisseurController::class, 'store'])->name('addfourni');
