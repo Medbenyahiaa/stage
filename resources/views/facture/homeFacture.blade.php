@@ -80,7 +80,7 @@
                         <tbody>
                             @foreach ($facturations as $facturation)
                             <tr>
-                                <td>{{ $facturation->numero_facture}}</td>
+                                <td><a href="/modi/{{ $facturation->id }}" style="color:#0000ff">{{ $facturation->numero_facture}}</a></td>
                                 <td>{{ $facturation->date_facture }}</td>
                                 @foreach($clients as $client)
                                 @if ($client->id == $facturation->client_id)
@@ -90,19 +90,23 @@
                                 <td>{{ $facturation->montant }}</td>
                                 @if ($facturation->valide == 0)
                                 <td>
-                                    <a href="" class="btn btn-danger">non valide</a>
+                                    <a href="/updateValide/{{ $facturation->id }}" class="btn btn-danger">non valide</a>
                                 </td>
                                 @endif
                                 @if ($facturation->valide == 1)
                                 <td>
-                                    <a href="" class="btn btn-success">valide</a>
+                                    <a href="/updateValide/{{ $facturation->id }}" class="btn btn-success">valide</a>
                                 </td>
                                 @endif
+                                <td>
+                                     <a href="/deleteFacture/{{ $facturation->id }}" class="btn btn-danger"><span class="fa fa-trash"></span></a>
+                                </td>
                             </tr>
                             @endforeach
+                            
                         </tbody>
 
-                        //
+                        
 
                     </table>
                 </div>

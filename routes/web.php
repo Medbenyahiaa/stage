@@ -35,13 +35,19 @@ Route::post('/updateClient/{id}', [App\Http\Controllers\ClientController::class,
 
 
 //ADMIN
-Route::get('/addadmin' , [App\Http\Controllers\UserController::class, 'Admin'])->name('addadmin');
+Route::get('/addAdmin', 'UserController@addAdmin')->name('addAdmin');
+Route::get('/admin' , [App\Http\Controllers\UserController::class, 'Admin'])->name('admin');
 //FACTURE
 Route::get('/facture', [App\Http\Controllers\FactureController::class, 'index'])->name('facture');
 Route::post('/addfact', [App\Http\Controllers\FactureController::class, 'store'])->name('addfact');
-//Route::post('/editFacturationValide/{id, valide}', [App\Http\Controllers\FactureController::class, 'editFacturationValide'])->name('editFacturationValide');
+Route::get('/modi/{id}', 'FactureController@modi')->name('modi');
+Route::get('/updateValide/{id}', 'FactureController@updateValide')->name('updateValide');
+Route::get('/deleteFacture/{id}', 'FactureController@deleteFacture')->name('deleteFacture');
 //FOURNISSEUR
 Route::get('/allfourni', [App\Http\Controllers\FournisseurController::class, 'index'])->name('fournisseur');
 Route::post('/addfourni', [App\Http\Controllers\FournisseurController::class, 'store'])->name('addfourni');
 Route::get('/editFourni/{id}', [App\Http\Controllers\FournisseurController::class, 'edit'])->name('editFourni');
 Route::post('/updateFourni/{id}', [App\Http\Controllers\FournisseurController::class, 'update'])->name('updateFourni');
+//article
+Route::get('/ajouterArticle/{id}', 'ArticleController@ajouterArticle')->name('ajouterArticle');
+Route::get('/deleteArticle/{id}/{facture_id}', 'ArticleController@deleteArticle')->name('deleteArticle');

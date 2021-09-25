@@ -15,10 +15,12 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('facturation_id');
+            $table->foreign('facturation_id')->references('id')->on('facturations')->onDelete('cascade');
             $table->string('description');
             $table->double('prixU');
-            $table->int('quantite');
-
+            $table->string('quantite');
+            
             $table->timestamps();
         });
     }

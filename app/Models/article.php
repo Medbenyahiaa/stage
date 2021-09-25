@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class article extends Model
 {
-    use HasFactory;
+    
+    protected $fillable = ['description','prixU','quantite','facturation_id'];
+    protected $primaryKey ='id';
 }

@@ -112,7 +112,7 @@ Gestion d'administrateur
     <!-- Boutton de confirmation -->
         <center>
             <div class="form-group">
-                <input type="submit" value="{{ __('Register') }}" class="VoirPlus">
+            <a href="/addAdmin" class="VoirPlus">Ajouter</a>
             </div>
         </center>
 

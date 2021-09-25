@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 use  App\Models\client;
 use App\Models\facturation;
+use App\Models\article;
 use Illuminate\Http\Request;
+use SebastianBergmann\Environment\Console;
 
 class FactureController extends Controller
 {
@@ -15,11 +17,25 @@ class FactureController extends Controller
     public function index()
     {
         //
+        $article = Article::all();
+        $facturations = Facturation::all();
+        foreach ($facturations as $f) {
+            $total = 0;
+            foreach ($article as $a) {
+                if ($a->facturation_id == $f->id) {
+                    $total += $a->prixU * $a->quantite;
+                }
+            }
+            $facture = Facturation::find($f->id);
+            $facture->montant = $total;
+            $facture->save();
+        }
         $facturations = Facturation::all();
         $clients = Client::all();
         return \view('facture.homeFacture', [
             'clients' => $clients,
             'facturations' => $facturations,
+            'total' => $total,
         ]);
     }
 
@@ -96,5 +112,40 @@ class FactureController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+/**
+     * Update the specified resource in storage.
+     *
+     * 
+     */
+    public function updateValide($id)
+    {
+        $facture = Facturation::find($id);
+        if ($facture->valide == 0) {
+            $facture->valide = 1;
+        }
+        else if ($facture->valide == 1) {
+            $facture->valide = 0;
+        }
+        $facture->save();
+        return redirect()->route('facture');
+    }
+
+    public function modi($id)
+    {
+        $facture = Facturation::find($id);
+        $article = Article::all();
+        return \view('facture.modifact', [
+            'facture' => $facture,
+            'article' => $article,
+        ]);
+    }
+
+    public function deleteFacture($id) {
+        $facture = Facturation::find($id);
+        $facture->delete();
+        return redirect()->route('facture');
     }
 }

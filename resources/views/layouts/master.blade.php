@@ -214,7 +214,7 @@ S412.45,452.911,408.309,452.911z"/>
               </a>
           </li>
           <li @if( request()->is('addadmin') ) class="activeItem" @endif>
-              <a class="icon-link" href="/addadmin">
+              <a class="icon-link" href="/admin">
                     <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474.565 474.565" >
                         <g>
                             <path d="M255.204,102.3c-0.606-11.321-12.176-9.395-23.465-9.395C240.078,95.126,247.967,98.216,255.204,102.3z"/>
