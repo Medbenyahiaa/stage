@@ -99,7 +99,7 @@ Fournisseur
                                 <td>{{ $fournisseur->ville }}</td>
                                 <td>{{ $fournisseur->telephone }}</td>
                                 <td>
-                                    <a href="{{ route('editFourni', ['id' => $fournisseur->id]) }}" class="btn btn-primary">Edition Client</a>
+                                    <a href="{{ route('editFourni', ['id' => $fournisseur->id]) }}" class="btn btn-success">Edition Fournisseur</a>
                                 </td>
                             </tr>
                             @endforeach

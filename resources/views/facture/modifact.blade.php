@@ -15,7 +15,7 @@
 <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">Liste Client</h4>
+                <h4 class="card-title">Liste D'article</h4>
                 @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}

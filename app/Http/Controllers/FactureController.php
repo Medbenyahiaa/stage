@@ -21,9 +21,12 @@ class FactureController extends Controller
         $facturations = Facturation::all();
         foreach ($facturations as $f) {
             $total = 0;
+            $total1 = 0;
             foreach ($article as $a) {
                 if ($a->facturation_id == $f->id) {
-                    $total += $a->prixU * $a->quantite;
+                    
+                    $total1 += $a->prixU * $a->quantite ;
+                    $total += $total1 + ($total1*0.2);
                 }
             }
             $facture = Facturation::find($f->id);

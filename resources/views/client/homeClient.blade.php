@@ -99,7 +99,10 @@
                                 <td>{{ $client->ville }}</td>
                                 <td>{{ $client->telephone }}</td>
                                 <td>
-                                    <a href="{{ route('editClient', ['id' => $client->id]) }}" class="btn btn-primary">Edition Client</a>
+                                    <a href="{{ route('editClient', ['id' => $client->id]) }}" class="btn btn-success">Edition Client</a>
+                                </td>
+                                <td>
+                                     <a href="{{ route('suppclient', ['id' => $client->id]) }}" class="btn btn-danger"><span class="fa fa-trash"></span></a>
                                 </td>
                             </tr>
                             @endforeach

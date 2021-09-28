@@ -10,8 +10,10 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons.png">
-  <link rel="icon" type="image/png" href="../img/favicons.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -96,7 +98,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Better Solutions For Your Business</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <h2>We Serve ......</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <!--a href="#about" class="btn-get-started scrollto">Get Started</a-->
             <!--a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a-->
@@ -269,39 +271,39 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Les 8 principales activités que nous maîtrisons SIMPLEMENT </p>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i  class='bx bx-laptop'></i></div>
+              <h4><a href="">Création de site web et Hébergement WEB </a></h4>
+              <p> D'un simple site internet de présence à un développement sur mesure, nous possédons toutes les compétences techniques nécessaires pour satisfaire votre besoin. et Besoin d'un hébergement WEB, un nom de domaine, une messagerie professionnelle, ou un certificat SSL ? Nous les fournissons avec un service après vente d'excellence!</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class='bx bx-mobile-alt'></i></div>
+              <h4><a href="">Application mobile</a></h4>
+              <p>Quelle que soit la taille de votre application mobile, hybride ou native, nous en occuperons du développement jusqu'au déploiement.</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="">Référencement Web</a></h4>
+              <p>Le SEO (Search Engine Optimization), ou l’optimisation du référencement naturel, est une technique appliquée sur un site internet afin d'optimiser son classement dans les moteurs de recherche tel que Google.</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class='bx bxs-megaphone'></i></div>
+              <h4><a href="">Marketing Digital</a></h4>
+              <p>Du référencement WEB avancé (SEO) à la publicité en ligne (SEM), nous concevons une stratégie adaptée à votre activité pour atteindre ensemble des résultats significatifs.</p>
             </div>
           </div>
 
@@ -318,18 +320,18 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/benyahia.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Mohamed Benyahia</h4>
+                <span>CEO</span>
+                <p>Etudiant en 4éme année ingénierie informatiques</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -342,11 +344,11 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/anouarjpg.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Anouar Hamali </h4>
+                <span>CEO</span>
+                <p> Etudiant en 4éme année ingénierie informatiques</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -404,7 +406,9 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>MHY Service est une agence web, spécialisée dans le domaine du développement web, son portfolio compte des centaines de projets réalisés partout au Maroc et en offshore, ses principaux domaines d’activités sont: le développement de site web, 
+            l’hébergement web, le référencement naturel SEO, l' intégration des ERP et CRM, le développement des intranet/extranet, et le marketing digital.
+            Nous tenons à concevoir des solutions simples, sécurisées et surtout pertinentes pour nos clients. Cela, fait de nous le partenaire par excellence dans le CONSULTING & IT SOLUTIONS</p>
         </div>
 
         <div class="row">
@@ -414,19 +418,19 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Temara, Wifaq, LOT 535022</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>mhyservice@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>06 45 67 89 54</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -478,7 +482,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p></p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -495,11 +499,11 @@
             <img src="../img/logocentre.png" width="200" height="200" >
             
             <p>
-              A108 Adam Street <br>
-              Temara, NY 535022<br>
+             Maroc <br>
+              Temara, Wifaq 535022<br>
               Maroc <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> 06 45 67 89 54<br>
+              <strong>Email:</strong> mhyservice@gmail.com<br>
             </p>
           </div>
 
@@ -550,7 +554,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="#">MB</a>
       </div>
     </div>
   </footer><!-- End Footer -->

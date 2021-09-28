@@ -20,7 +20,7 @@
           <div class="card card-chart">
             <div class="card-header">
               <h5 class="card-category"></h5>
-              <h4 class="card-title">Annonce </h4>
+              <h4 class="card-title">Facture </h4>
               <div class="dropdown">
                 <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
                   <i class="now-ui-icons loader_gear"></i>
@@ -49,7 +49,7 @@
           <div class="card card-chart">
             <div class="card-header">
               <h5 class="card-category">Performance</h5>
-              <h4 class="card-title">User Profile</h4>
+              <h4 class="card-title">Statistique client</h4>
               <div class="dropdown">
                 <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
                   <i class="now-ui-icons loader_gear"></i>
@@ -113,14 +113,7 @@
                                     {{ Auth::user()->name }}
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    Telephone
-                                </th>
-                                <td>
-                                    {{ Auth::user()->telephone }}
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <th>
                                     Compte crée le
