@@ -29,18 +29,23 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function addAdmin(Request $request)
-    {
+    
+    public function addadmin(){
+        
+
+        // Creation du nouveau profil dans la table users
         $user = user::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'password' => $request->input('password'),
-            'password_confirmation' => $request->input('password_confirmation'),
+            'name' => request('name'),
+            'email' => request('email'),
+            'password' => bcrypt(request('password')),
+            'name' => request('name'),
+            
+            
         ]);
-        $users = user::all();
-        return \view('admin.add', [
-            'users' => $users
-        ]);
+
+      
+
+        return redirect('/admin');
     }
     
 }

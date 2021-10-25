@@ -22,13 +22,27 @@ Gestion d'administrateur
 
     @csrf
 
+   <!-- Nom Complet-->
+   <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" name="name" placeholder="name " value="name"  required autocomplete="name" autofocus>
+        </div>
 
+        <!-- Gestion d'erreur pour le Nom -->
+        @if( $errors->has('name'))
+            <p class="erreur">
+                {{ $errors->first('name') }}
+            </p>
+
+        @endif 
     <!-- Email -->
         <div class="input-group form-group">
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
-            <input type="text" class="form-control" name="email" placeholder="Adresse Mail" value="{{ old('email') }}" required autocomplete="email">
+            <input type="text" class="form-control" name="email" placeholder=" email" value="email" required autocomplete="email">
         </div>
 
         <!-- Gestion d'erreur pour l'adresse Mail -->
@@ -45,7 +59,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Mot de passe" name="password" required autocomplete="new-password">
+            <input type="password" class="form-control" placeholder="password" name="password" required autocomplete="new-password">
 
         </div>
         <!-- Gestion d'erreur pour le mot de passe -->
@@ -61,7 +75,7 @@ Gestion d'administrateur
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Mot de passe de confirmation" name="password_confirmation" required autocomplete="new-password">
+            <input type="password" class="form-control" placeholder="password_confirmation" name="password_confirmation" required autocomplete="new-password">
         </div>
 
         <!-- Gestion d'erreur pour le mot de passe de confirmation-->
@@ -75,21 +89,7 @@ Gestion d'administrateur
 
         <br>
 
-        <!-- Nom Complet-->
-        <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            <input type="text" class="form-control" name="name" placeholder="Nom " value="{{ old('name') }}"  required autocomplete="name" autofocus>
-        </div>
-
-        <!-- Gestion d'erreur pour le Nom -->
-        @if( $errors->has('name'))
-            <p class="erreur">
-                {{ $errors->first('name') }}
-            </p>
-
-        @endif
+        
 
     <!-- Numero de téléphone 
         <div class="input-group form-group">

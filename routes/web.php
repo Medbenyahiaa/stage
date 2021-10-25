@@ -25,9 +25,7 @@ Route::get('/dash', function () {
     return view('admin.homeAdmin');
 });
 //CLIENT
-/*Route::get('/ajoutclient',function(){
-    return view('client.AjouteClient');
-});*/
+
 Route::get('/allClient', [App\Http\Controllers\ClientController::class, 'index'])->name('client');
 Route::post('/addClient', [App\Http\Controllers\ClientController::class, 'store'])->name('addClient');
 Route::get('/editClient/{id}', [App\Http\Controllers\ClientController::class, 'edit'])->name('editClient');
